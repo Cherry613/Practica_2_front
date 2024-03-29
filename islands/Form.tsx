@@ -36,37 +36,39 @@ const Form :FunctionComponent = () => {
     }
 
     return (
-        <div>
-            <form action ="/addHeroe" method="POST" onSubmit={faltanDatos}>
-                <div>Nombre:
-                   <input type="text" id="name" name="name"
+            <form class = "formAdd" action ="/addHeroe" method="POST" onSubmit={faltanDatos}>
+                <h1>Introduce los datos del heroe</h1>
+                <div> 
+                   <input class = "inputAdd" type="text" id="name" name="name"
+                    placeholder={"Nombre"}
                     onFocus={() => setError("")}
                     onInput={(p) => setName(p.currentTarget.value)}/>                    
                 </div>
-                <div>Imagen:
-                   <input type="text" id="image" name="image"
+                <div>
+                   <input class = "inputAdd" type="text" id="image" name="image"
+                   placeholder={"Imagen"}
                    onFocus={() => setError("")}
                    onInput={(p) => setImage(p.currentTarget.value)}/>                    
                 </div>
-                <div>Sound:
-                   <input type="text" id="sound" name="sound"
+                <div> 
+                   <input class = "inputAdd" type="text" id="sound" name="sound"
+                   placeholder={"Sonido"}
                    onFocus={() => setError("")}
                    onInput={(p) => setSound(p.currentTarget.value)}/>                    
                 </div>
-                <div>Creador:
-                   <input type="text" id="creator" name="creator"
+                <div>
+                   <input class = "inputAdd" type="text" id="creator" name="creator"
+                   placeholder={"Creador"}
                    onFocus={() => setError("")}
                    onInput={(p) => setCreator(p.currentTarget.value)}/>                    
                 </div>
                 <div>
-                   <button type="submit" disabled = {error !== ""}>Submit</button> 
+                   <button class = "submit" type="submit" disabled = {error !== ""}>Submit</button> 
                 </div>
                 <div>
                     {error !== "" && <div>{error}</div>}
                 </div>
             </form>
-
-        </div>
     )
 }
 

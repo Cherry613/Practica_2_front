@@ -10,7 +10,7 @@ type HeroesProps ={
 const Heroes: FunctionComponent<HeroesProps> = (props) => {
     const {data} = props
     return (
-        <div>
+        <div class = "heroes">
            {data.map((hero) => <HeroComp name = {hero.name} image = {hero.image} sound = {hero.sound}/>)} 
         </div>
     )

@@ -8,7 +8,7 @@ type addHeroProps = {
 }
 
 export const handler: Handlers = {
-    //cojo las cosas del formulario, hago un json y se lo paso a mi api de addHero, q va a llamar a la api real delprofe 
+     
     POST: async (req: Request, ctx: FreshContext<unknown, addHeroProps>) => {
         const form = await req.formData();
         const data ={

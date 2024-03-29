@@ -21,8 +21,8 @@ export const handler: Handlers  = {
 
 export default function Home(props: PageProps) {
   return (
-    <div>
-      <Heroes data = {props.data} />
-    </div>
+      <div class = "fondo">
+        <Heroes data = {props.data} />
+      </div>
   );
 }

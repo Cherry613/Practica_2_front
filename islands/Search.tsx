@@ -1,6 +1,6 @@
 //AL FINAL LO HICE EN EL SERVIDOR PQ NO QUIERE Q HAGAMOS UNA API DENTRO DE UNA API
 
-import { useState } from "preact/hooks";
+/*import { useState } from "preact/hooks";
 import { FunctionComponent } from "https://esm.sh/v128/preact@10.19.6/src/index.js";
 import { Heroe } from "../types.ts";
 import axios from "npm:axios"
@@ -52,5 +52,5 @@ export const Search: FunctionComponent = () => {
         </div>
     )
 
-}
+}*/
 

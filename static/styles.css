@@ -1,4 +1,146 @@
 
+
+/*https://img.freepik.com/fotos-premium/fondo-mazmorra-pixel-art-juegos-8-bits_334978-2383.jpg*/
+.fondo{
+  /*background-image: url("https://img.freepik.com/fotos-premium/fondo-mazmorra-pixel-art-juegos-8-bits_334978-2383.jpg");*/
+  background-color: rgb(250, 220, 180);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+a{
+  text-decoration: none;
+}
+a:hover {
+  color: white;
+}
+
+.formAdd{
+  display: flex;
+  flex-direction: column;
+  align-content:space-evenly;
+
+  flex-wrap: wrap;
+  margin-top: 50px;
+
+  border: solid 2px rgb(89, 133, 195);
+  gap: 1rem;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0 5px 5px#6b7280;
+  width: 500px;
+  margin-left : 500px;;
+}
+
+.inputAdd{
+  display: flex;
+  align-content: center;
+  justify-items: center;
+  flex-wrap: wrap;
+  padding: 5px;
+  gap: 2rem;
+  font-size: 1rem;
+}
+
+.submit{
+  cursor: pointer;
+  margin-top: 10px;
+  background-color: rgb(176, 249, 117);
+  padding: 0.5rem 1rem;
+  font-size: 1.125rem;
+  border: solid 2px rgb(141, 200, 92);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    color: white;
+    background-color: rgb(141, 200, 92);
+  }
+
+  &[disabled] {
+    background-color: #e5e7eb;
+    color: #333;
+    cursor: not-allowed;
+  }
+}
+
+.inputBuscar{
+  padding: 0.5rem 1rem;
+  font-size: 1.125rem;
+}
+
+.buscar{
+  cursor: pointer;
+  background-color: rgb(117, 172, 249);
+  padding: 0.5rem 1rem;
+  font-size: 1.125rem;
+  border: solid 2px rgb(89, 133, 195);
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    color: white;
+    background-color: rgb(77, 155, 203);
+  }
+}
+
+.fondo-busqueda{
+  background-color: #e5e7eb;
+}
+
+.busqueda{
+  display:flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.formBusqueda{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.layout {
+  display: flex;
+  flex-direction: row;
+  background-color: #e180f4;
+  align-self: center;
+  justify-content: center;
+  justify-content: space-around;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.heroImage{
+  border-radius: 2px;
+  height: 60%;
+  width: 70%;
+  align-self: center;
+  margin: 0;
+  padding: 10px;
+}
+
+.heroe {
+  text-align: center;
+  border: solid 2px #6b7280;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4px;
+  padding: 2px;
+  width: 350px;
+}
+
+.heroes{
+  display: flex;
+  justify-content: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+
 *,
 *::before,
 *::after {

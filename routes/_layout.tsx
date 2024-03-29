@@ -5,12 +5,14 @@ const layout = (props: PageProps) => {
 
     return(
         <div>
-            <a href ="/addHeroe">Crear heroe</a>
-            <a href = "/SearchHeroe"> Buscar heroe </a>
-            <div>
-                <Component/>
-            </div> 
+            <div class = "layout">
+                <a href ="/addHeroe">Crear heroe</a>
+                <a href ="/">Todos los heroes</a>
+                <a href = "/SearchHeroe"> Buscar heroe </a>
+            </div>
+            <Component/>
         </div>
+        
        
     )
 }

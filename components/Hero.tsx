@@ -10,9 +10,9 @@ type HeroProps = {
 const Hero: FunctionComponent<HeroProps> = (props) => {
     const {name, image, sound} = props
     return (
-        <div>
+        <div class = "heroe">
             <h3>{name}</h3>
-            <image src={image} alt={"imagen del heroe: " + name}/>
+            <image src={image} alt={"imagen del heroe: " + name} class="heroImage"/>
             <audio controls> <source src={sound} /> </audio>
 
             <DeleteHero name = {name}/>
