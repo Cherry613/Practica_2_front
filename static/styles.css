@@ -1,16 +1,5 @@
 
 
-/*https://img.freepik.com/fotos-premium/fondo-mazmorra-pixel-art-juegos-8-bits_334978-2383.jpg*/
-/*https://media.istockphoto.com/id/1308121289/es/foto/terror%C3%ADficas-catacumbas-medievales-sin-fin-con-antorchas-concepto-de-pesadilla-m%C3%ADstica.webp?b=1&s=170667a&w=0&k=20&c=8EtEKCZJuOIC1tJsN5EMFqYb80MnqCAMAoMXvFr8KFc=*/
-/*https://i.pinimg.com/564x/fd/3e/fc/fd3efcd071a4225be0be44104cf39af4.jpg*/
-/*https://i.pinimg.com/564x/3a/75/a8/3a75a8af69e8973506463ab5bc3e518b.jpg*/
-
-/*https://i.pinimg.com/564x/a4/75/a0/a475a0ae3ece54ce46d85c424e27250e.jpg*/
-/*https://i.pinimg.com/564x/fd/3e/fc/fd3efcd071a4225be0be44104cf39af4.jpg*/
-/*https://i.pinimg.com/564x/58/b5/68/58b56883a1eb078ea015947096b19d50.jpg*/
-/*https://i.pinimg.com/564x/3a/75/a8/3a75a8af69e8973506463ab5bc3e518b.jpg*/
-/*https://i.pinimg.com/564x/80/e2/50/80e25075488c89bf6624f167e46f9e97.jpg*/
-
 .fondo{
   background: url("https://img.freepik.com/fotos-premium/fondo-mazmorra-pixel-art-juegos-8-bits_334978-2383.jpg");
   background-repeat: no-repeat;
@@ -134,8 +123,6 @@ a:hover {
   display: flex;
   flex-direction: row;
   background-color: #e180f4;
-  align-self: center;
-  justify-content: center;
   justify-content: space-around;
   padding: 10px;
   font-size: 20px;
@@ -167,6 +154,7 @@ a:hover {
   flex-direction: column;
   align-items: center;
   margin: 4px;
+  margin-top: 10px;
   padding: 2px;
   width: 350px;
 }
