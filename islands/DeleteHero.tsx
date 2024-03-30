@@ -23,13 +23,12 @@ export const DeleteHero: FunctionComponent<deleteProps> = (props) => {
         if(response.status === 204){
             setMessage("Se ha borrado el heroe")
         }
-        
     }
 
     return(
         <div>
             <input type = "text" id = "creator" name = "creator" placeholder={"Creador"} onInput={(c) => setCreator(c.currentTarget.value)}/>
-            <button onClick = {deleteHero}>Delete</button>
+            <button class = "delete" onClick = {deleteHero}>Delete</button>
             {message !== "" && <div>{message}</div>}
         </div>
         

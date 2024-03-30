@@ -36,6 +36,7 @@ const Form :FunctionComponent = () => {
     }
 
     return (
+        <div>
             <form class = "formAdd" action ="/addHeroe" method="POST" onSubmit={faltanDatos}>
                 <h1>Introduce los datos del heroe</h1>
                 <div> 
@@ -66,9 +67,10 @@ const Form :FunctionComponent = () => {
                    <button class = "submit" type="submit" disabled = {error !== ""}>Submit</button> 
                 </div>
                 <div>
-                    {error !== "" && <div>{error}</div>}
+                    {error !== "" && <div class="error">{error}</div>}
                 </div>
             </form>
+        </div>
     )
 }
 

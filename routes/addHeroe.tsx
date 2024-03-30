@@ -46,13 +46,16 @@ const Page = (props: PageProps<addHeroProps>) => {
     const error = props.params.error
 
     return(
-        <div>
-            <Form />
-            <div>
-            {message !== "" && <div>{message}</div>}
-            {error !== "" && <div>{error}</div>}
+        <body class = "fondo-add">
+            <div class = "add">
+                <Form />
+                <div>
+                {message !== "" && <div>{message}</div>}
+                {error !== "" && <div>{error}</div>}
+                </div>
             </div>
-        </div>
+        </body>
+        
         
     )
 }

@@ -25,18 +25,19 @@ export const handler : Handlers = {
 
 const Page = (props: PageProps) => {
     return(
-        <div class = "busqueda">
-            <form class="formBusqueda">
+        <body class="fondo-busqueda">
+            <div class = "busqueda">
+                <form class="formBusqueda">
+                    <div>
+                        <input class="inputBuscar" type = "text" id = "name" name = "name" placeholder={"Introduce un nombre"} /> 
+                        <button class = "buscar" type="submit"> Buscar</button>
+                    </div>
+                </form>
                 <div>
-                    <input class="inputBuscar" type = "text" id = "name" name = "name" placeholder={"Introduce un nombre"} /> 
-                    <button class = "buscar" type="submit"> Buscar</button>
-                </div>
-            </form>
-            <div>
-                {props.data !== undefined && <Hero name = {props.data.name} image = {props.data.image} sound = {props.data.sound}/>}
-            </div> 
-            
-        </div>
+                    {props.data !== undefined && <Hero name = {props.data.name} image = {props.data.image} sound = {props.data.sound}/>}
+                </div>   
+            </div>      
+        </body>
     )
 }
 
