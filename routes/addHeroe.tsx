@@ -9,23 +9,37 @@ type addHeroProps = {
 
 export const handler: Handlers = {
      
-    POST: async (req: Request, ctx: FreshContext<unknown, addHeroProps>) => {
+    POST: async (req: Request, ctx: FreshContext<unknown, string>) => {
         const form = await req.formData();
+
+        const name = form.get("name")
+        const image = form.get("image")
+        const sound = form.get("sound")
+        const creator = form.get("creator")
+
+        debugger;
+
         const data ={
-            name: form.get("name") || undefined,
-            image: form.get("image") || undefined,
-            sound: form.get("sound") || undefined,
-            creator: form.get("creator") || undefined,
+            name: name,
+            image: image,
+            sound: sound,
+            creator: creator,
         }
 
-        const response = await axios.post<addHeroProps>("https://supermondongo.deno.dev/", {
+        const response = await axios.post("https://supermondongo.deno.dev/", {
             name: data.name,
             image: data.image,
             sound: data.sound,
             creator: data.creator,
         });
 
-        if(response.status !== 201){
+        if(!response){
+            return new Response ("Error al añadir un heroe", {status: 500})
+        }
+        
+        return ctx.render("Heroe creado");
+
+        /*if(response.status !== 201){
             return ctx.render({
                 message: "",
                 error: "No se ha podido crear el heroe"
@@ -35,13 +49,13 @@ export const handler: Handlers = {
         return ctx.render({
             message: "heroe creado",
             error: ""
-        })
+        })*/
 
     }
 }
 
 
-const Page = (props: PageProps<addHeroProps>) => {
+const Page = (props: PageProps) => {
     const message = props.params.message
     const error = props.params.error
 
@@ -50,8 +64,7 @@ const Page = (props: PageProps<addHeroProps>) => {
             <div class = "add">
                 <Form />
                 <div>
-                {message !== "" && <div>{message}</div>}
-                {error !== "" && <div>{error}</div>}
+                    <p>{props.data}</p>
                 </div>
             </div>
         </body>

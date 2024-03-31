@@ -119,6 +119,20 @@ a:hover {
   margin-bottom: 50px;
 }
 
+.fondo-search{
+  background: url("https://i.pinimg.com/564x/58/b5/68/58b56883a1eb078ea015947096b19d50.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.search{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+}
+
+
 .layout {
   display: flex;
   flex-direction: row;
@@ -157,6 +171,11 @@ a:hover {
   margin-top: 10px;
   padding: 2px;
   width: 350px;
+  height: 400px;
+}
+
+h3{
+  margin-top: 10px;
 }
 
 .heroes{

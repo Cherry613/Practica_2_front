@@ -27,9 +27,12 @@ const Page = (props: PageProps<Heroe>) => {
     const {name, image, sound} = props.data
 
     return (
-        <div>
-            <Hero name = {name} image = {image} sound = {sound}/>
-        </div>
+        <body class = "fondo-search">
+            <div class = "search">
+                <Hero name = {name} image = {image} sound = {sound}/>
+            </div> 
+        </body>
+        
     )
 }
 
