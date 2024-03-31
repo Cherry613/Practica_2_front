@@ -13,7 +13,6 @@ export const DeleteHero: FunctionComponent<deleteProps> = (props) => {
     const [message, setMessage] = useState<string> ("");
 
     const deleteHero = async () => {
-        //llamo a la api de la carpeta de rutas api
         console.log("a");
         const response = await axios.delete(`/api/DeleteHeroe`, {data: {
             name: name,

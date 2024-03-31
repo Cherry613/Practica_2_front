@@ -10,7 +10,6 @@ const Form :FunctionComponent = () => {
     const [creator, setCreator] = useState<string>("");
     const [error, setError] = useState<string>("");
 
-    //hacer funcion q saque errores segun lo que falte como en la practica aquella del profe
     const faltanDatos = (e: JSX.TargetedEvent<HTMLFormElement, Event>) => {
         e.preventDefault();
         const errorMsg: string[] = [];
